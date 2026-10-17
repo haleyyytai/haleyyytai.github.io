@@ -5,32 +5,36 @@ permalink: /blog/
 description: Notes and writing by Huilin Tai on multimodal models for cancer research, evaluation, and explainability.
 ---
 
-{% assign intro = site.posts | where: "featured", true | first %}
-{% assign others = site.posts | where_exp: "p", "p.featured != true" %}
+<section class="section-narrow">
+  <h2>Blog</h2>
 
-<section class="post">
+  <p class="blog-intro">
+    Notes on things I am reading, building, or still confused about.
+    <br><a class="more-writing-link" href="{{ '/blog/writing/' | relative_url }}">More writing &rarr;</a>
+  </p>
 
-  <a class="writing-callout" href="{{ '/blog/writing/' | relative_url }}">
-    <span class="writing-callout-label">More writing</span>
-    <span class="writing-callout-text">Personal essays, books, and occasional thoughts{% if others.size > 0 %} &middot; {{ others.size }} {% if others.size == 1 %}piece{% else %}pieces{% endif %}{% endif %}</span>
-    <span class="writing-callout-arrow" aria-hidden="true">&rarr;</span>
-  </a>
-
-  {% if intro %}
-  <header class="post-header">
-    <h1 class="post-title">{{ intro.title }}</h1>
-    <p class="post-meta">
-      <time datetime="{{ intro.date | date_to_xmlschema }}">{{ intro.date | date: "%B %-d, %Y" }}</time>
-    </p>
-  </header>
-
-  <div class="post-body">
-    {{ intro.content }}
+  {% assign blog_posts = site.posts | where_exp: "p", "p.writing != true" %}
+  {% if blog_posts.size > 0 %}
+  <div class="post-list">
+    {% for post in blog_posts %}
+    <div class="post-list-item">
+      <div class="post-list-date">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+        {%- if post.tags and post.tags.size > 0 %}
+        <div class="post-list-tags">{{ post.tags | join: " · " }}</div>
+        {%- endif %}
+      </div>
+      <div class="post-list-text">
+        <a class="post-list-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <p class="post-list-excerpt">
+          {{ post.description | default: post.excerpt | strip_html | truncate: 200 }}
+        </p>
+      </div>
+    </div>
+    {% endfor %}
   </div>
   {% else %}
   <p>No posts yet — first one coming soon.</p>
   {% endif %}
-
-  <p class="post-back"><a href="{{ '/blog/writing/' | relative_url }}">Other writing &rarr;</a></p>
 
 </section>

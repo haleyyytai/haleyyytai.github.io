@@ -18,8 +18,8 @@ exclude:
   - Huilin_Tai_cv.docx
   - README.md
 
-# Categories for the "Other writing" page (/blog/writing/).
-# Set `category:` in a post's front matter to one of these keys.
+# Posts with `writing: true` go on /blog/writing/ instead of /blog/.
+# Optionally set `category:` to one of these keys for the filter buttons.
 writing_categories:
   - key: research-notes
     label: Research & Notes

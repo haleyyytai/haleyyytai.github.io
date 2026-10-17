@@ -18,10 +18,10 @@ layout: default
     {{ content }}
   </div>
 
-  {%- if page.featured %}
-  <p class="post-back"><a href="{{ '/blog/writing/' | relative_url }}">Other writing &rarr;</a></p>
-  {%- else %}
+  {%- if page.writing %}
   <p class="post-back"><a href="{{ '/blog/writing/' | relative_url }}">&larr; all writing</a></p>
+  {%- else %}
+  <p class="post-back"><a href="{{ '/blog/' | relative_url }}">&larr; all posts</a></p>
   {%- endif %}
 
 </article>

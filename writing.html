@@ -5,7 +5,7 @@ permalink: /blog/writing/
 description: Essays, notes, and book writing by Huilin Tai.
 ---
 
-{% assign others = site.posts | where_exp: "p", "p.featured != true" %}
+{% assign others = site.posts | where: "writing", true %}
 
 <section class="section-narrow">
   <p class="crumb"><a href="{{ '/blog/' | relative_url }}">&larr; blog</a></p>
