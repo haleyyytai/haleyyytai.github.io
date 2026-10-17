@@ -19,11 +19,3 @@ exclude:
   - README.md
 
 # Posts with `writing: true` go on /blog/writing/ instead of /blog/.
-# Optionally set `category:` to one of these keys for the filter buttons.
-writing_categories:
-  - key: research-notes
-    label: Research & Notes
-  - key: essays
-    label: Personal Essays
-  - key: books
-    label: Books

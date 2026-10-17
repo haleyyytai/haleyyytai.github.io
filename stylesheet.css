@@ -391,77 +391,6 @@ li {
   color: #1f4f8b;
 }
 
-.filter-chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: -10px 0 28px 0;
-}
-
-.chip {
-  padding: 4px 13px;
-  border: 1px solid #e3e6ea;
-  border-radius: 999px;
-  background: #ffffff;
-  color: #4b525c;
-  font: inherit;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-.chip:hover {
-  border-color: #c9d3e0;
-}
-
-.chip.is-active {
-  border-color: #1f2328;
-  background: #1f2328;
-  color: #ffffff;
-}
-
-.writing-card {
-  display: block;
-  padding: 18px 0;
-  border-top: 1px solid #ececec;
-  text-decoration: none;
-}
-
-.writing-card:last-child {
-  border-bottom: 1px solid #ececec;
-}
-
-.writing-card[hidden] {
-  display: none;
-}
-
-.writing-card-kicker {
-  font-size: 12px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #8f959d;
-}
-
-.writing-card-kicker span {
-  margin: 0 6px;
-}
-
-.writing-card-title {
-  margin-top: 2px;
-  font-size: 19px;
-  font-weight: 700;
-  line-height: 1.4;
-  color: #1f2328;
-}
-
-.writing-card:hover .writing-card-title {
-  color: #1f4f8b;
-}
-
-.writing-card-excerpt {
-  margin: 4px 0 0 0;
-  color: #6b7280;
-}
-
 /* ===== blog post ===== */
 .post {
   max-width: 680px;
@@ -512,6 +441,13 @@ li {
 .post-body img {
   margin: 26px 0;
   border-radius: 8px;
+}
+
+.post-body .section-break {
+  margin: 34px 0;
+  text-align: center;
+  letter-spacing: 0.4em;
+  color: #9aa0a8;
 }
 
 .post-body blockquote {

@@ -1,65 +1,39 @@
 ---
 layout: default
-title: Writing
+title: Personal Writing
 permalink: /blog/writing/
-description: Essays, notes, and book writing by Huilin Tai.
+description: Essays and personal writing by Huilin Tai.
 ---
 
-{% assign others = site.posts | where: "writing", true %}
+{% assign writing_posts = site.posts | where: "writing", true %}
 
 <section class="section-narrow">
   <p class="crumb"><a href="{{ '/blog/' | relative_url }}">&larr; blog</a></p>
 
-  <h2>writing</h2>
+  <h2>Personal Writing</h2>
 
   <p class="blog-intro">
-    Notes on research, books, and everything else.
+    Essays, books, and occasional detours.
   </p>
 
-  {% if others.size > 0 %}
-  <div class="filter-chips" role="tablist" hidden>
-    <button type="button" class="chip is-active" data-filter="all">All</button>
-    {%- for cat in site.writing_categories %}
-    {%- assign n = others | where: "category", cat.key | size %}
-    {%- if n > 0 %}
-    <button type="button" class="chip" data-filter="{{ cat.key }}">{{ cat.label }}</button>
-    {%- endif %}
-    {%- endfor %}
-  </div>
-
-  <div class="writing-list">
-    {% for post in others %}
-    {%- assign cat = site.writing_categories | where: "key", post.category | first %}
-    <a class="writing-card" href="{{ post.url | relative_url }}" data-category="{{ post.category }}">
-      <div class="writing-card-kicker">
-        {%- if cat %}{{ cat.label }}{% else %}Writing{% endif %}
-        <span>&middot;</span>
-        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %Y" }}</time>
+  {% if writing_posts.size > 0 %}
+  <div class="post-list">
+    {% for post in writing_posts %}
+    <div class="post-list-item">
+      <div class="post-list-date">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
       </div>
-      <div class="writing-card-title">{{ post.title }}</div>
-      <p class="writing-card-excerpt">{{ post.description | default: post.excerpt | strip_html | truncate: 180 }}</p>
-    </a>
+      <div class="post-list-text">
+        <a class="post-list-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <p class="post-list-excerpt">
+          {{ post.description | default: post.excerpt | strip_html | truncate: 200 }}
+        </p>
+      </div>
+    </div>
     {% endfor %}
   </div>
   {% else %}
   <p>More coming soon.</p>
   {% endif %}
-</section>
 
-<script>
-  (function () {
-    var bar = document.querySelector('.filter-chips');
-    if (!bar || bar.querySelectorAll('.chip').length < 3) return;
-    bar.hidden = false;
-    var cards = document.querySelectorAll('.writing-card');
-    bar.addEventListener('click', function (e) {
-      var btn = e.target.closest('.chip');
-      if (!btn) return;
-      var f = btn.getAttribute('data-filter');
-      bar.querySelectorAll('.chip').forEach(function (c) { c.classList.toggle('is-active', c === btn); });
-      cards.forEach(function (card) {
-        card.hidden = f !== 'all' && card.getAttribute('data-category') !== f;
-      });
-    });
-  })();
-</script>
+</section>
