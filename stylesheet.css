@@ -372,8 +372,11 @@ li {
 
 /* ===== blog: "more writing" link ===== */
 .more-writing-link {
-  font-weight: 700;
-  text-decoration: none;
+  color: inherit;
+}
+
+.more-writing-link:hover {
+  color: #1f4f8b;
 }
 
 /* ===== writing index ===== */
