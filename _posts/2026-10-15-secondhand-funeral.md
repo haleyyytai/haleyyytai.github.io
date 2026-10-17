@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Secondhand Funeral"
-description: "On grief, memory, and losing someone you never quite knew."
+description: "How do you lose someone you never quite knew."
 tags: [essay, grief]
 writing: true
 ---
