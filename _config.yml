@@ -17,3 +17,13 @@ exclude:
   - delete_all.txt
   - Huilin_Tai_cv.docx
   - README.md
+
+# Categories for the "Other writing" page (/blog/writing/).
+# Set `category:` in a post's front matter to one of these keys.
+writing_categories:
+  - key: research-notes
+    label: Research & Notes
+  - key: essays
+    label: Personal Essays
+  - key: books
+    label: Books

@@ -3,6 +3,7 @@ layout: post
 title: "A bit about myself and my research"
 description: "How a scattered path through mathematics, statistics, and CS came back around to cancer, and what I am trying to ask now."
 tags: [personal]
+featured: true
 ---
 
 I started my undergrad in mathematics and statistics, with an attempt at finance
