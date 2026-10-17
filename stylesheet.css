@@ -372,7 +372,7 @@ li {
 
 /* ===== blog: "more writing" link ===== */
 .more-writing-link {
-  font-size: 15px;
+  font-weight: 700;
   text-decoration: none;
 }
 
