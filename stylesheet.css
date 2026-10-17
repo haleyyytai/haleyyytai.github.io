@@ -371,12 +371,11 @@ li {
 }
 
 /* ===== blog: "more writing" link ===== */
-.more-writing-link {
-  color: inherit;
-}
-
-.more-writing-link:hover {
-  color: #1f4f8b;
+.more-writing-link,
+.more-writing-link:hover,
+.more-writing-link:focus {
+  color: #4b525c;
+  text-decoration: underline;
 }
 
 /* ===== writing index ===== */

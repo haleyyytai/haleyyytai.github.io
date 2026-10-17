@@ -62,5 +62,6 @@ Every celebration now holds a small, silent funeral in the basement. My grief co
 
 This weekend, I visited my grandfather’s sister. Our branches of the family live in different countries, so my grandparents rarely get the chance to see her. She cautiously asked about my uncle’s death. It turned out that, even after all these years, she still didn’t know what had actually happened.
 
-That sounds about right. We never talk about these things. Losing a family member leaves a wound that never quite scabs over.<br>
+That sounds about right. We never talk about these things. Losing a family member leaves a wound that never quite scabs over.
+
 We try not to touch each other’s backs.
