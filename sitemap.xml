@@ -1,25 +1,27 @@
----
-layout: null
-permalink: /sitemap.xml
----
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>{{ '/' | absolute_url }}</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <loc>https://haleyyytai.github.io/</loc>
   </url>
   <url>
-    <loc>{{ '/blog/' | absolute_url }}</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <loc>https://haleyyytai.github.io/blog/</loc>
   </url>
   <url>
-    <loc>{{ '/blog/writing/' | absolute_url }}</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <loc>https://haleyyytai.github.io/blog/writing/</loc>
   </url>
-  {%- for post in site.posts %}
   <url>
-    <loc>{{ post.url | absolute_url }}</loc>
-    <lastmod>{{ post.last_modified_at | default: post.date | date_to_xmlschema }}</lastmod>
+    <loc>https://haleyyytai.github.io/blog/secondhand-funeral/</loc>
   </url>
-  {%- endfor %}
+  <url>
+    <loc>https://haleyyytai.github.io/blog/two-talks-and-a-hometown/</loc>
+  </url>
+  <url>
+    <loc>https://haleyyytai.github.io/blog/a-bit-about-myself-and-my-research/</loc>
+  </url>
+  <url>
+    <loc>https://haleyyytai.github.io/blog/200-benefits-of-a-breakup/</loc>
+  </url>
+  <url>
+    <loc>https://haleyyytai.github.io/blog/a-letter-to-grandpa/</loc>
+  </url>
 </urlset>
