@@ -17,5 +17,6 @@ exclude:
   - delete_all.txt
   - Huilin_Tai_cv.docx
   - README.md
+  - index_1.html
 
 # Posts with `writing: true` go on /blog/writing/ instead of /blog/.
