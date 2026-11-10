@@ -46,7 +46,8 @@ This went on until my other grandmother, looking at the kitchen filling up bottl
 
 It took my parents a while to realize those weren't even our bottles. Their little scientist had been hunting grasshoppers around the park and picking up discarded plastic bottles to store the surplus.
 
-Environmentally responsible, ethically questionable when it came to animal welfare. At least they were pests.
+Environmentally responsible, ethically questionable when it came to animal welfare.<br>
+At least they were pests.
 
 After that I became obsessed with foraging for wild greens, in that very same park, and converted from fauna to flora.<br>
 That summer the whole family dined on weeds I personally refused to eat.
