@@ -2,7 +2,7 @@
 layout: post
 title: "A Brief Review of Hammocks"
 description: "I found a hammock on Rice campus today."
-tags: [essay, childhood]
+tags: [essay]
 writing: true
 ---
 
