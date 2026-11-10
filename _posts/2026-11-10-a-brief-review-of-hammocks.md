@@ -37,8 +37,7 @@ The short haircut my mom took me to get was, thinking back, hideous. Mercifully,
 What was I thinking, lying in that hammock that summer?<br>
 It's a shame I don't remember.
 
-If there was food, I ate it; if there were clothes, I wore them; if there was somewhere to go, I went. Living some kind of unexamined life.<br>
-Somewhere, Socrates rolls his eyes.
+If there was food, I ate it; if there were clothes, I wore them; if there was somewhere to go, I went. Living some kind of unexamined life.
 
 Later that summer I devoted myself to improving my grasshopper-catching skill. I didn't even like bugs. I was a little afraid of them.<br>
 I was afraid of them while I caught them, and afraid of my own hands after.<br>
